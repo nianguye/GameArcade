@@ -1,0 +1,180 @@
+body {
+    background-color: maroon;
+}
+
+section {
+
+    border: 10px solid;
+    background-color: grey;
+    margin-bottom:15px;
+    margin-top:15px;
+    width: 100%;
+}
+
+
+
+.contain {
+    background-color: green;
+    border: none;
+    text-align: center;
+    height:10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+@keyframes backgroundChange {
+    0%  {
+        background-color: grey;
+    }
+    100% {
+        background-color: silver;
+    }
+}
+
+#title {
+    animation-name: backgroundChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#game {
+    background-color: green;
+    height: 80vh;
+    display: block;
+}
+
+
+
+#tipsPage {
+    display: block;
+    white-space: normal;
+    width: 80vw;
+    margin-left: 9.5%;
+    text-align: center;
+    font-size:150%;
+    text-wrap: balance;
+    margin-top: 100px;
+    
+}
+
+#tipsPage h2 {
+    text-align: center;
+}
+
+#tipsPage p {
+    font-size: 4vmin;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+
+div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    height: 26vh;
+}
+
+
+.baccaratHand {
+    width: 500px;
+    height: 100%;
+    margin: 0px;
+
+}
+
+.inputButton {
+    position: relative;
+    background-color: maroon;
+    cursor: pointer; /* Optional: Change cursor on hover */
+    font-size: 150%;
+    margin-top: 12vh;
+    margin-bottom:10px;
+    margin-left: 15px;
+    margin-right:15px;
+    width: 10vmax;
+    height: 100px;
+    color: yellow;
+    overflow: visible;
+}
+
+.cardClassBaccarat {
+    position: relative;
+    width: 30%;
+    max-width: 300px;
+
+}
+
+.cardClass {
+    position: relative;
+    width: 20%;
+    max-width: 300px;
+
+}
+.LobbyImage {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 30vh;
+}
+
+@keyframes winBorder {
+    0%  {
+        border-color: yellow;
+    }
+    100% {
+        border-color: white;
+    }
+}
+
+@keyframes loseBorder {
+    0%  {
+        border-color: red;
+    }
+    100% {
+        border-color: black;
+    }
+}
+
+.victoryScreen{
+    background-color: lightblue;
+    animation-name: winBorder;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: yellow;
+    font-size: 80px;
+    text-align: center;
+
+    width: 20vmax;
+    height: 200px;
+    position:absolute;
+    overflow: visible;
+}
+
+.defeatScreen{
+    background-color: darkred;
+    animation-name: loseBorder;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    width: 20vmax;
+    height: 200px;
+    position:absolute;
+    overflow: visible;
+
+}
+/* Media query for 850 */
+/* For games, probably just make the font smaller */
+/* Lobby probably font as well */
